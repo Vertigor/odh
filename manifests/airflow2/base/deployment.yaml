@@ -29,7 +29,10 @@ spec:
       annotations:
         checksum/configmap: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
     spec:
-
+      hostAliases:
+      - ip: 10.135.21.239
+        hostnames:
+        - keycloak.js.sgcc.com.cn
       priorityClassName: ""
       # securityContext:
       #   fsGroup: 1001
@@ -85,7 +88,7 @@ spec:
             - name: dags-data
               mountPath: /tmp/git
           terminationMessagePolicy: File
-          image: 'k8s.gcr.io/git-sync/git-sync:v3.2.2'
+          image: 'willdockerhub/git-sync:v3.2.2'
         - name: airflow-scheduler
           image: quay.io/ml-on-k8s/airflow:2.0.0.scheduler
           imagePullPolicy: "IfNotPresent"
