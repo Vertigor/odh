@@ -25,6 +25,10 @@ spec:
       annotations:
         sidecar.istio.io/inject: "true"
     spec:
+      hostAliases:
+      - ip: 10.135.21.239
+        hostnames:
+        - keycloak.js.sgcc.com.cn
       containers:
       - image: quay.io/ml-aml-workshop/postgresql-96
         env:
