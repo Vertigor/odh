@@ -13,6 +13,10 @@ spec:
       labels:
         app: grafana
     spec:
+      hostAliases:
+      - ip: 10.135.21.239
+        hostnames:
+        - keycloak.js.sgcc.com.cn
       securityContext:
         fsGroup: 472
         supplementalGroups:
