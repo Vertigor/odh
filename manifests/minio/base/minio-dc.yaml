@@ -26,6 +26,10 @@ spec:
         app.kubernetes.io/version: "0.0.1"
         app.kubernetes.io/managed-by: Helm
     spec:
+      hostAliases:
+      - ip: 10.135.21.239
+        hostnames:
+        - keycloak.js.sgcc.com.cn
       containers:
         - name: minio
           livenessProbe:
