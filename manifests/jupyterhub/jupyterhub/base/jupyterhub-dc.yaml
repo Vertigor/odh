@@ -31,6 +31,10 @@ spec:
         component.opendatahub.io/name: jupyterhub
         opendatahub.io/component: 'true'
     spec:
+      hostAliases:
+      - ip: 10.135.21.239
+        hostnames:
+        - keycloak.js.sgcc.com.cn
       containers:
       - env:
         - name: OAUTH_TLS_VERIFY
