@@ -56,17 +56,16 @@ spec:
           path: manifests/airflow2
       name: airflow2
 
-    - kustomizeConfig:
-        parameters:
-          - name: s3_endpoint_url
-            value: "minio-ml-workshop.ml-workshop:9000"
-          - name: MINIO_HOST  
-            value: minio.js.sgcc.com.cn
-
-        repoRef:
-          name: manifests
-          path: manifests/minio
-      name: minio
+#    - kustomizeConfig:
+#        parameters:
+#          - name: s3_endpoint_url
+#            value: "minio-ml-workshop.ml-workshop:9000"
+#          - name: MINIO_HOST  
+#            value: minio.js.sgcc.com.cn
+#        repoRef:
+#          name: manifests
+#          path: manifests/minio
+#      name: minio
     - kustomizeConfig:
         parameters:
           - name: MLFLOW_HOST  
