@@ -65,7 +65,7 @@ spec:
             - name: MLFLOW_S3_ENDPOINT_URL
               value: http://10.135.21.247:31194/
             - name: AWS_ACCESS_KEY_ID
-              value: "2J5R3OC5B1WMAUY1WQ60"
+              value: "NO289SWX7I233TDMZC8S"
             - name: AWS_SECRET_ACCESS_KEY
               valueFrom:
                 secretKeyRef:
