@@ -18,7 +18,7 @@ metadata:
   annotations:
     openshift.io/host.generated: 'true'
     nginx.ingress.kubernetes.io/proxy-buffer-size: "8k"
-
+    kubernetes.io/ingress.class: "nginx"
 spec:
   tls:
     - hosts:
