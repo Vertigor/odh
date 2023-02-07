@@ -30,7 +30,7 @@ spec:
         checksum/configmap: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
     spec:
       hostAliases:
-      - ip: 10.135.21.239
+      - ip: 10.135.21.248
         hostnames:
         - keycloak.js.sgcc.com.cn
       priorityClassName: ""
