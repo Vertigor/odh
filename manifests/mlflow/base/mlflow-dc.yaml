@@ -63,9 +63,9 @@ spec:
             - '--workers=2'
           env:
             - name: MLFLOW_S3_ENDPOINT_URL
-              value: http://minio-ml-workshop:9000/
+              value: http://10.135.21.247:31194/
             - name: AWS_ACCESS_KEY_ID
-              value: "minio"
+              value: "2J5R3OC5B1WMAUY1WQ60"
             - name: AWS_SECRET_ACCESS_KEY
               valueFrom:
                 secretKeyRef:
