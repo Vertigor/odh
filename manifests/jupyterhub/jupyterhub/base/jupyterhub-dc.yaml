@@ -96,7 +96,7 @@ spec:
               name: $(jupyterhub_secret)
               key: CONFIGPROXY_AUTH_TOKEN
         image: quay.io/odh-jupyterhub/jupyterhub-img:v0.3.0
-        imagePullPolicy: "Always"
+        imagePullPolicy: "IfNotPresent"
         name: jupyterhub
         ports:
         - containerPort: 8080
@@ -119,7 +119,7 @@ spec:
         - name: JUPYTERHUB_DATABASE_HOST
           value: jupyterhub-db
         image: quay.io/odh-jupyterhub/jupyterhub-img:v0.3.0
-        imagePullPolicy: "Always"
+        imagePullPolicy: "IfNotPresent"
         name: wait-for-database
         resources:
           limits:
