@@ -12,6 +12,7 @@ metadata:
     opendatahub.io/component: 'false'
   annotations:
     openshift.io/host.generated: 'true'
+    kubernetes.io/ingress.class: "nginx"
 spec:
   tls:
     - hosts:
