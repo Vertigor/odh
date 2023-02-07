@@ -15,7 +15,7 @@ spec:
         app: mlflow
     spec:
       hostAliases:
-      - ip: 10.135.21.239
+      - ip: 10.135.21.248
         hostnames:
         - keycloak.js.sgcc.com.cn
       serviceAccountName: mlflow-proxy
