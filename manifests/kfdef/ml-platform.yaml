@@ -23,7 +23,7 @@ spec:
 
         parameters:
           - name: s3_endpoint_url
-            value: "minio-ml-workshop.ml-workshop:9000"
+            value: "10.135.21.247:31194"
           - name: KEYCLOAK_URL  
             value: keycloak.js.sgcc.com.cn
           - name: CLIENT_SECRET
