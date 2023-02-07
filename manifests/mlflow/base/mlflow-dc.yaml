@@ -52,7 +52,7 @@ spec:
 
         - name: mlflow-deployment
           image: quay.io/ml-aml-workshop/mlflow:0.0.2
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           args:
             - mlflow
             - server
