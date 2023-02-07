@@ -36,7 +36,7 @@ spec:
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
-      imagePullPolicy: Always
+      imagePullPolicy: IfNotPresent
       securityContext: {}
       serviceAccount: spark-operator
       serviceAccountName: spark-operator
